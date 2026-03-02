@@ -1,0 +1,55 @@
+header {
+    grid-area: header;
+    background-color: gray;
+}
+
+header div {
+    padding: 40px;
+    color: white;
+}
+
+nav {
+    background: black;
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    min-height: 100vh;
+}
+
+main {
+    grid-area: main;
+    background: darkgray;
+    padding: 5px;
+}
+
+aside {
+    grid-area: aside;
+    background: white;
+    padding: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background: gray;
+    padding: 100px;
+    text-align: center;
+    color: white;
+}
