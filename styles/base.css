@@ -1,0 +1,139 @@
+:root {
+    --primary-blue: #2c5674;
+    --primary-gray:  #3a3a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+}
+
+header span {
+    display: block;
+}
+
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+nav {
+    background-color: var(--primary-gray)
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Center main and set a simple multi-column grid */
+main {
+    max-width: 100%;        /* limits width */
+    display: grid;
+    grid-template-columns: 600px 300px; /* fixed 3 columns */
+    justify-content: center;
+    gap: 10px;                /* space between cards */
+}
+
+/* Page title spans full width */
+main h1 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+    padding: 20px;
+}
+
+/* Card style */
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    border: solid black 1px;
+}
+
+/* Images inside cards */
+.card img {
+    margin: 5px;
+}
+
+.card h2 {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Links inside cards */
+.card a {
+    color: blue;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.card a:hover {
+    color: black;
+}
+
+footer {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.card:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+}
+
+.card:first-of-type h2 {
+    grid-column: 1 / -1;
+}
+
+.card figure {
+    text-align: left;
+}
+
+.card h3 {
+    grid-column: 1 / -1;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
