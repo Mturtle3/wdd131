@@ -22,8 +22,11 @@ header {
     padding: 1rem;
 }
 
-main, .hero {
-    flex: 1 0 auto; 
+main {
+    flex: 1 0 auto;
+}
+
+.hero {
     position: relative;
 }
 
