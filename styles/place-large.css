@@ -1,10 +1,4 @@
 @media (min-width: 700px) {
-
-    .hero img:not(.weather-icon) {
-        width: 100%;
-        object-fit: cover;
-    }
-
     .overlay {
         text-align: left;
         position: absolute;
@@ -18,7 +12,7 @@
     .hero .overlay:nth-of-type(1) {
         top: 30px; left: 40px;
     }
-    
+
     .hero .overlay:nth-of-type(2) {
         bottom: 30px; right: 30px; top: auto;
     }
@@ -29,27 +23,20 @@
         display: block;
         padding: 0.5rem 1rem;
         margin: -1rem -1rem 1rem -2rem; 
-        position: relative;
+        position: relative; 
         box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
 
-    .hero .overlay:nth-of-type(2) h2::after {
-        content: ""; 
-        display: inline-block;
-        width: 45px; 
-        height: 10px;
+    .overlay .weather-icon {
+        display: none !important;
     }
 
-    .overlay:nth-of-type(2) .weather-icon {
-        display: block !important;
+    .hero .overlay:nth-of-type(2) h2::after {
+        content: "🌤️";
         position: absolute;
-        top: 23px;
-        right: 10px;
-        transform: translateY(-50%);
-        width: 40px !important;
-        height: auto;
-        margin: 0;
-        z-index: 10;
+        right: 15px;
+        top: 5px;
+        font-size: 1.5rem;
     }
 
     .overlay p {
