@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place - Mark Nielsen</title>
+    <meta name="author" content="Mark Nielsen">
+    <meta name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Mark Nielsen - A webpage about Antarctica and its weather.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Antarctica</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/antarctica-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/antarctica-medium.webp" media="(min-width: 500px)">
+                <img src="images/antarctica-small.webp" alt="Penguins in Antarctica">
+            </picture>
+
+            <div class="overlay">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 14,200,000 sq km</p>
+                <p><strong>Population:</strong> ~1,000 (seasonal)</p>
+                <p><strong>Region:</strong> South Pole</p>
+                <p><strong>Climate:</strong> Polar</p>
+                <p><strong>Time Zone:</strong> UTC varying</p>
+            </div>
+
+            <div class="overlay">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/weather.svg" alt="Weather icon">
+                <p><strong>Temperature:</strong> <span id="temp">-15</span> °C</p>
+                <p><strong>Conditions:</strong> Snowy</p>
+                <p><strong>Wind:</strong> <span id="wind">20</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> - Mark Nielsen - Antarctica Project</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

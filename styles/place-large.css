@@ -1,0 +1,60 @@
+@media (min-width: 700px) {
+    .hero {
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        text-align: left;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid #ccc;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 1rem;
+        width: 280px;
+        border-bottom: none;
+    }
+
+    .hero .overlay:nth-of-type(1) {
+        top: 30px;
+        left: 40px;
+    }
+
+    .hero .overlay:nth-of-type(2) {
+        bottom: 30px;
+        right: 30px;
+        top: auto;
+    }
+
+    .overlay h2 {
+        background-color: var(--primary-color);
+        color: white;
+        display: block;
+        padding: 0.5rem 1rem;
+        margin: -1rem -1rem 1rem -2rem; 
+        position: relative; 
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .overlay p {
+        justify-content: flex-start;
+    }
+
+    .overlay p strong {
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .weather-icon {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0;
+    }
+}

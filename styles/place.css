@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #003566;
+    --secondary-color: #00a8e8;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+main, .hero {
+    flex: 1 0 auto; 
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    padding: 2rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.overlay p {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+    gap: 5px;
+}
+
+.weather-icon {
+    width: 64px !important;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    flex-shrink: 0; 
+    margin-top: auto;
+}
