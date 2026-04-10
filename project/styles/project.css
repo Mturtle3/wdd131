@@ -1,6 +1,7 @@
 :root {
     --primary-color: deepskyblue;
     --secondary-color: lightgray;
+    --accent: lightcyan;
 }
 
 * {
@@ -12,7 +13,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
-    color: var(--dark-color);
 }
 
 header {
@@ -42,25 +42,33 @@ nav.open {
 }
 
 nav ul {
-    list-style: none;
     padding: 10px 0;
 }
 
-nav li {
-    margin: 10px 0;
-}
-
-nav a, li a {
+nav a {
     display: block;
     text-decoration: none;
     font-weight: 600;
     color: black;
     padding: 12px 16px;
-    margin: 8px 10px;
-    background: lightcyan;
+    margin: 10px;
+    background: var(--accent);
     border-radius: 10px;
     text-align: center;
-    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 12px 16px;
+    margin: 10px;
+    background: var(--accent);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 li {
@@ -91,6 +99,7 @@ h1, h2 {
     display: block;
     margin: 10px 0;
     max-width: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .card p {
@@ -132,16 +141,17 @@ form label {
 
 form input[type="submit"] {
     background-color: var(--primary-color);
-    color: var(--white);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 form input[type="submit"]:hover {
-    background-color: #0099cc;
+    text-decoration: underline;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 footer {
@@ -149,6 +159,11 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
 }
 
 @media (min-width: 600px) {
