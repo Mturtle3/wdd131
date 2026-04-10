@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nielsen's Console Hub</title>
+    <meta name="author" content="Mark Nielsen">
+    <meta name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Mark Nielsen - A webpage comparing the Xbox Series X, PlayStation 5, and Nintendo Switch 2.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nielsen's Console Hub</h1>
+        <button id="menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="xbox.html">Xbox Series X</a></li>
+                <li><a href="playstation.html">PlayStation 5</a></li>
+                <li><a href="nintendo.html">Nintendo Switch 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Xbox Series X</h2>
+            <p><strong>Capabilities: </strong>4k, 120 FPS, 8k HDR, DirectX Ray Tracing</p>
+            <p><strong>Features: </strong>Quick Resume and Backward Compatibility</p>
+            <p><strong>Storage: </strong>1 TB</p>
+            <img src="images/xbox-series-x.jpg" alt="A picture of the Xbox Series X." loading="lazy">
+            <p><strong>Dimensions: </strong>5.9in x 5.9in x 11.9in</p>
+            <p><strong>Weight: </strong>9.8 lbs</p>
+            <p><strong>Price: </strong>$649.99</p>
+            <p><strong>Link: </strong><a href="https://www.xbox.com/en-us/consoles/xbox-series-x?xr=shellnav" target="_blank">https://www.xbox.com/en-us/consoles/xbox-series-x?xr=shellnav</a></p>
+            <li><a href="xbox.html">More Details</a></li>
+        </section>
+
+        <section class="card">
+            <h2>PlayStation 5</h2>
+            <p><strong>Capabilities: </strong>4k, 120 FPS, HDR, Raytracing</p>
+            <p><strong>Features: </strong>Adaptive Triggers and Backward Compatibility</p>
+            <p><strong>Storage: </strong>1 TB</p>
+            <img src="images/playstation.jpg" alt="A picture of the Playstation 5." loading="lazy">
+            <p><strong>Dimensions: </strong>10.2in x 4.1in x 15.4in</p>
+            <p><strong>Weight: </strong>9.9 lbs</p>
+            <p><strong>Price: </strong>$649.00</p>
+            <p><strong>Link: </strong><a href="https://www.playstation.com/en-us/ps5/" target="_blank">https://www.playstation.com/en-us/ps5/</a></p>
+            <li><a href="playstation.html">More Details</a></li>
+        </section>
+
+        <section class="card">
+            <h2>Nintendo Switch 2</h2>
+            <p><strong>Capabilities: </strong>1080p (4k Docked), 120 FPS, HDR, Raytracing</p>
+            <p><strong>Features: </strong>Handheld and Docked, 2 Joycons, and Backward Compatibility</p>
+            <p><strong>Storage: </strong>256 GB</p>
+            <img src="images/nintendo-switch.avif" alt="A picture of the Nintendo Switch 2." loading="lazy">
+            <p><strong>Dimensions: </strong>10.7in x 4.5in x .55in</p>
+            <p><strong>Weight: </strong>1.18 lbs</p>
+            <p><strong>Price: </strong>$449.99</p>
+            <p><strong>Link: </strong> <a href="https://www.nintendo.com/us/gaming-systems/switch-2/" target="_blank">https://www.nintendo.com/us/gaming-systems/switch-2/</a></p>
+            <li><a href="nintendo.html">More Details</a></li>
+        </section>
+        <section class="card">
+            <h2>Subscribe to Our Weekly Gaming Newsletter</h2>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Favorite Console:</p>
+                
+                <input type="radio" id="xbox" name="console" value="Xbox">
+                <label for="xbox">Xbox</label>
+
+                <input type="radio" id="ps5" name="console" value="PlayStation 5">
+                <label for="ps5">PlayStation 5</label>
+
+                <input type="radio" id="switch" name="console" value="Nintendo Switch">
+                <label for="switch">Nintendo Switch</label>
+                <br>
+                <input type="radio" id="other" name="console" value="Other">
+                <label for="other">Other:</label>
+                <input type="text" id="otherConsole" name="otherConsole" placeholder="Type here">
+
+                <input type="submit" value="Subscribe">
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Mark Nielsen</p>
+        <p id="lastmodified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>
